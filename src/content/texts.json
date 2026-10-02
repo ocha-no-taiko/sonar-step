@@ -1,0 +1,75 @@
+{
+  "_note": "画面の文言。{name} の部分は実行時に差し込まれる",
+  "title": "SONAR STEP",
+  "subtitle": "聴いて、打ち込んで、迎え撃て。",
+  "rules": [
+    "敵の位置はフレーズ（音）で教えられる。",
+    "聴いた位置に砲台を置く。ズレても隣のマスなら半分当たる。",
+    "倒しきれなかった敵は赤くなって次のターンへ。2回目で基地に直撃する。"
+  ],
+  "difficulty": {
+    "label": "難度（フレーズの再生回数）",
+    "expert": "エキスパート",
+    "hard": "ハード",
+    "normal": "ノーマル",
+    "easy": "イージー",
+    "plays": "{n}回"
+  },
+  "hintToggle": "視覚ヒント（騒がしい場所向け）",
+  "start": "スタート",
+  "startNote": "音が出ます。ヘッドホン推奨",
+  "landscape": "横向きのほうが遊びやすいです",
+  "hud": {
+    "turn": "TURN {n}/{total}",
+    "loop": "{n}周目",
+    "base": "BASE",
+    "score": "SCORE",
+    "turrets": "TURRET {used}/{max}",
+    "ready": "準備完了",
+    "readyKey": "Space",
+    "readyDone": "入場待ち…",
+    "quit": "タイトルへ",
+    "locked": "LOCKED"
+  },
+  "phase": {
+    "intro": "NEW TRACK",
+    "introSub": "{name} ─ {role}",
+    "count": "READY",
+    "phrase": "LISTEN",
+    "phraseSub": "{i} / {n}",
+    "think": "BUILD",
+    "thinkSub": "あと {bars} 小節",
+    "entry": "INCOMING",
+    "result": "",
+    "carriedSub": "赤枠の敵は持ち越し。位置は見えている"
+  },
+  "hit": {
+    "perfect": "PERFECT",
+    "good": "GOOD",
+    "kill": "BREAK",
+    "baseHit": "-{n}"
+  },
+  "result": {
+    "turn": "撃破 {killed}/{total}",
+    "carried": "持ち越し {n}",
+    "baseHit": "基地被弾 {n}",
+    "clean": "CLEAR"
+  },
+  "toast": {
+    "full": "砲台の上限です",
+    "locked": "このトラックはまだ解放されていません",
+    "notNow": "砲台はシンキングタイムに置けます"
+  },
+  "end": {
+    "clear": "STAGE CLEAR",
+    "gameover": "BASE DOWN",
+    "score": "スコア",
+    "rank": "ランク",
+    "firstKill": "初見撃破",
+    "perfect": "パーフェクト",
+    "baseLeft": "残り基地HP",
+    "retry": "もう一度",
+    "loop": "{n}周目へ（基地HP {hp}）",
+    "title": "タイトルへ"
+  }
+}

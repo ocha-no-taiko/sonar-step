@@ -1,0 +1,67 @@
+{
+  "_note": "1曲 = 4セクション。phrase は 16文字（x = 敵、. = 空き）。turrets はそのターンの砲台の上限。newTracks はそのセクションで解放されるトラック（音色紹介が入る）",
+  "title": "Night Signal",
+  "seed": 2611,
+  "sections": [
+    {
+      "id": "intro",
+      "name": "INTRO",
+      "tracks": ["kick"],
+      "newTracks": ["kick"],
+      "backing": {
+        "bassRhythm": "x.......x.......",
+        "chords": [["A2", "E3", "A3"], ["F2", "C3", "A3"], ["C3", "G3", "E4"], ["G2", "D3", "B3"]],
+        "pad": true
+      },
+      "turns": [
+        { "turrets": 3, "phrase": { "kick": "x.......x......." } },
+        { "turrets": 4, "phrase": { "kick": "x.....x...x....." } }
+      ]
+    },
+    {
+      "id": "verse",
+      "name": "VERSE",
+      "tracks": ["kick", "snare"],
+      "newTracks": ["snare"],
+      "backing": {
+        "bassRhythm": "x..x..x...x..x..",
+        "chords": [["A2", "E3", "C4"], ["F2", "C3", "A3"], ["C3", "G3", "E4"], ["G2", "D3", "B3"]],
+        "pad": true
+      },
+      "turns": [
+        { "turrets": 5, "phrase": { "kick": "x.......x.......", "snare": "....x.......x..." } },
+        { "turrets": 6, "phrase": { "kick": "x.....x.x.......", "snare": "....x.......x..." } }
+      ]
+    },
+    {
+      "id": "build",
+      "name": "BUILD-UP",
+      "tracks": ["kick", "snare", "hat"],
+      "newTracks": ["hat"],
+      "backing": {
+        "bassRhythm": "x.x.x.x.x.x.x.x.",
+        "chords": [["F2", "C3", "A3"], ["G2", "D3", "B3"], ["E2", "B2", "G#3"], ["A2", "E3", "C4"]],
+        "pad": true
+      },
+      "turns": [
+        { "turrets": 7, "phrase": { "kick": "x.......x.......", "snare": "....x.......x...", "hat": "..x.x.....x.x..." } },
+        { "turrets": 8, "phrase": { "kick": "x.....x...x.....", "snare": "....x.......x...", "hat": "..x.x.....x.x..." } }
+      ]
+    },
+    {
+      "id": "drop",
+      "name": "DROP",
+      "tracks": ["kick", "snare", "hat", "perc"],
+      "newTracks": ["perc"],
+      "backing": {
+        "bassRhythm": "x..x..x.x..x..x.",
+        "chords": [["A2", "E3", "C4"], ["F2", "C3", "A3"], ["C3", "G3", "E4"], ["G2", "D3", "B3"]],
+        "pad": true
+      },
+      "turns": [
+        { "turrets": 9, "phrase": { "kick": "x.......x.......", "snare": "....x.......x...", "hat": "..x.x.....x.x...", "perc": ".......x........" } },
+        { "turrets": 10, "phrase": { "kick": "x.....x...x.....", "snare": "....x.......x...", "hat": "..x.x.....x.x...", "perc": "..............x." } }
+      ]
+    }
+  ]
+}

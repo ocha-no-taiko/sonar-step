@@ -1,0 +1,68 @@
+{
+  "_note": "ゲーム全体の数値。小節数はすべて 1小節 = 16ステップ。",
+  "bpm": 120,
+  "steps": 16,
+  "stepsPerBeat": 4,
+  "bars": {
+    "_note": "intro は新しいトラックが解放されたときだけ入る音色紹介。think はシンキングタイムの最大小節数（準備完了で早送り）",
+    "intro": 2,
+    "count": 1,
+    "think": 8,
+    "entry": 1,
+    "result": 1
+  },
+  "difficulties": [
+    { "id": "expert", "plays": 1 },
+    { "id": "hard", "plays": 2 },
+    { "id": "normal", "plays": 4 },
+    { "id": "easy", "plays": 8 }
+  ],
+  "defaultDifficulty": "normal",
+  "damage": {
+    "_note": "perfect = 敵と同じマス、good = 左右 range ステップ以内。重なった砲台のダメージは加算",
+    "perfect": 2,
+    "good": 1,
+    "range": 1
+  },
+  "baseHp": { "first": 5, "loop": 3 },
+  "carry": {
+    "_note": "carriedBonusTurrets: 持ち越し敵1体につき砲台上限を増やす数（0 = 増やさない＝ミスの代償）。finalTurnSurvivorsHitBase: 最終ターンで残った敵は持ち越し先がないので即直撃",
+    "carriedBonusTurrets": 0,
+    "finalTurnSurvivorsHitBase": true
+  },
+  "placement": {
+    "_note": "allowDuringPhrase: フレーズ再生中も砲台を置けるか",
+    "allowDuringPhrase": false
+  },
+  "thinking": {
+    "_note": "playPlacedTurrets: シンキングタイム中、置いた砲台の位置をそのトラックの音で鳴らす（耳で答え合わせできる）",
+    "playPlacedTurrets": true,
+    "placedTurretGain": 0.45
+  },
+  "hint": {
+    "_note": "視覚ヒント（騒がしい会場向け）。フレーズ再生中、敵がいるステップの列がうっすら光る。トラックは耳で判断する",
+    "defaultOn": false,
+    "columnFlash": 0.32
+  },
+  "score": {
+    "kill": 100,
+    "carriedKill": 50,
+    "perfectHit": 30,
+    "readyBonusPerBar": 20,
+    "baseHpBonus": 300,
+    "_ranksNote": "1回目の対峙で倒した割合で判定（上から順に照合）",
+    "ranks": [
+      { "rank": "S", "min": 0.95 },
+      { "rank": "A", "min": 0.85 },
+      { "rank": "B", "min": 0.7 },
+      { "rank": "C", "min": 0 }
+    ]
+  },
+  "audio": {
+    "masterGain": 0.8,
+    "metronomeGain": 0.18,
+    "carriedGain": 0.7,
+    "distortion": 18,
+    "backingGain": 0.5
+  }
+}

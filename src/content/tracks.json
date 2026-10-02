@@ -1,0 +1,49 @@
+{
+  "_note": "トラック = 音色 = 敵の種類。並び順は盤面の手前→奥。hp は perfect(2) / good(1) で削る。sound.synth は audio/engine.js のシンセ名",
+  "tracks": [
+    {
+      "id": "kick",
+      "name": "KICK",
+      "enemy": "ドラム・ゴーレム",
+      "role": "大型。パーフェクトが必要",
+      "hp": 2,
+      "color": "#ff3fa4",
+      "shape": "icosa",
+      "size": 0.46,
+      "sound": { "synth": "kick", "gain": 1.0, "pitchStart": 165, "pitchEnd": 42, "decay": 0.42 }
+    },
+    {
+      "id": "snare",
+      "name": "SNARE",
+      "enemy": "スネア・ナイト",
+      "role": "中型。パーフェクトか、グッド2発",
+      "hp": 2,
+      "color": "#33e6ff",
+      "shape": "octa",
+      "size": 0.4,
+      "sound": { "synth": "snare", "gain": 0.75, "tone": 185, "decay": 0.2 }
+    },
+    {
+      "id": "hat",
+      "name": "HI-HAT",
+      "enemy": "ハット・スウォーム",
+      "role": "ザコ。グッドでも倒せる",
+      "hp": 1,
+      "color": "#ffd23f",
+      "shape": "tetra",
+      "size": 0.32,
+      "sound": { "synth": "hat", "gain": 0.5, "decay": 0.06 }
+    },
+    {
+      "id": "perc",
+      "name": "COWBELL",
+      "enemy": "カウベル・タイラント",
+      "role": "ボス級。パーフェクト＋グッドが必要",
+      "hp": 3,
+      "color": "#5dff8a",
+      "shape": "knot",
+      "size": 0.34,
+      "sound": { "synth": "cowbell", "gain": 0.42, "freqA": 545, "freqB": 815, "decay": 0.28 }
+    }
+  ]
+}
